@@ -1,16 +1,16 @@
 import React  from 'react'
-import Navbar from '../navbar/Navbar';
+import Navbar from '@/navbar/NavItem';
 
 
-interface Container{
+interface LayoutProps {
     children: React.ReactNode;
 }
 
 
-function Layout({children}: Container) {
+function Layout({children}: LayoutProps ) {
   return (
     <>
-        <Navbar />
+        <Navbar url="" title="" />
             {children}
 
        

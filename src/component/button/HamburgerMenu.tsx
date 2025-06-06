@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function HamburgerMenuWithAnimation() {
   const [open, setOpen] = useState(false);

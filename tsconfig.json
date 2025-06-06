@@ -1,7 +1,42 @@
 {
-  "files": [],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@hooks/*": ["hooks/*"],
+      "@context/*": ["context/*"],
+      "@services/*": ["services/*"],
+      "@types/*": ["types/*"]
+    },
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowJs": true,
+    "types": ["vite/client"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"],
   "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    { "path": "./tsconfig.node.json",
+      "prepend": false 
+    }
+    
   ]
 }
+
+
+// Referenced project 'c:/Users/Mr.HasheMolHosaini/Desktop/study/tarrahy/React_Django/sina_ecamers/front/tsconfig.node.json' must have setting "composite": true.ts
+// Referenced project 'c:/Users/Mr.HasheMolHosaini/Desktop/study/tarrahy/React_Django/sina_ecamers/front/tsconfig.node.json' may not disable emit.ts
+// ⚠ Error
+
+// Referenced project c:/Users/Mr.HasheMolHosaini/Desktop/study/tarrahy/React_Django/sina_ecamers/front/tsconfig.node.json must have setting "composite": true.
